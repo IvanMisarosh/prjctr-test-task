@@ -7,7 +7,6 @@ def find_second_largest(nums: list[int]) -> int:
     else:
         return arr[0]
 
-
 def test_find_second_largest():
     assert find_second_largest([4, 2, 5, 1]) == 4
     assert find_second_largest([12, 35, 1, 10, 34, 1]) == 34
