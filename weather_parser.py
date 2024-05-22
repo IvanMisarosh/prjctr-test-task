@@ -84,6 +84,12 @@ def get_last_week_average_temp(city: str) -> float:
 if __name__ == "__main__":
 
     city = input("To get average temperature over the past seven days please enter city name in english: ")
+    try:
+        assert city, "City name can't be empty"
+    except AssertionError as e:
+        print(e)
+        exit()
+
     avarage_temp = get_last_week_average_temp(city)
     print("Average temperature over the past seven days in {} is: {} °Celsius".format(city, round(avarage_temp, 1)))
 
