@@ -1,0 +1,6 @@
+Used third-party libraries:
+    Requests (to install use: "pip install requests")
+
+Used built-in libraries:
+    json
+    datetime
