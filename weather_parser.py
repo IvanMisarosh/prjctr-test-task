@@ -18,7 +18,7 @@ def get_forecast(city: str, iso_date: str) -> str:
     :return: json string with forecast data
     """
     try:
-        request_string = "{}?api_key={}&dt={}&q={}".format(base_url, api_key, iso_date, city)
+        request_string = "{}?key={}&dt={}&q={}".format(base_url, api_key, iso_date, city)
         request = requests.request("GET", request_string)
     except Exception as e:
         print(e)
@@ -28,7 +28,7 @@ def get_forecast(city: str, iso_date: str) -> str:
         assert request.status_code == 200
     except AssertionError:
         print("Request status: {}".format(request.status_code))
-        print("Request contents: {}".format(request.content))
+        print("Error message: {}".format(json.loads(request.content)["error"]["message"]))
         exit()
     else:
         return request.text
