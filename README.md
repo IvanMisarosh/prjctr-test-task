@@ -1,26 +1,27 @@
-# prjctr-test-task
-**Weather API Average Temperature Calculator**
-This Python script calculates the average temperature over the past seven days for a specified city using the WeatherAPI.
+# Weather API Average Temperature Calculator
+**This Python script calculates the average temperature over the past seven days for a specified city using the WeatherAPI.**
 
-**Project Setup**
-Clone the Repository: Clone this repository to your local machine using the following command:
+## Project Setup
 
-git clone <repository_url>
+**1. Clone the Repository**: Clone this repository to your local machine using the following command:
 
-Install Dependencies: Make sure you have Python installed on your system. Additionally, install the required Python packages using pip:
-pip install requests
+`git clone <repository_url>`
 
-Obtain API Key: Sign up for an account on WeatherAPI and obtain an API key. Replace the api_key variable in the script (weather_parser.py) with your API key.
+**2. Install Dependencies**: Make sure you have Python installed on your system. Additionally, install the required Python packages using pip:
+`pip install requests`
 
-**Execution**
+**3. Obtain API Key**: Sign up for an account on WeatherAPI and obtain an API key. Replace the api_key variable in the script (weather_parser.py) with your API key.
+
+**WeatherAPI url**: `https://www.weatherapi.com/`
+## Execution
 To execute the script:
 
-Open a terminal or command prompt.
+**1. Open a terminal or command prompt.**
 
-Navigate to the directory where the weather_parser.py file is located.
+**2. Navigate to the directory where the weather_parser.py file is located.**
 
-Run the script using the following command:
+**3. Run the script using the following command:**
 
-python weather.py
+`python weather.py`
 
-Follow the prompts to enter the city name in English for which you want to calculate the average temperature over the past seven days.
+**4. Follow the prompts to enter the city name in English for which you want to calculate the average temperature over the past seven days.**
